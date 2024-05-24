@@ -6,32 +6,11 @@ import { InactivePostsComponent } from './pages/inactive-posts/inactive-posts.co
 import { DetailComponent } from './pages/detail/detail.component';
 
 const routes: Routes = [
-  {
-    path:'',
-    component:HomeComponent,
-    pathMatch:'full'
-
-  },
-  {
-    path:'post-attivi',
-    component: ActivePostsComponent
-  },
-  {
-    path:'post-inattivi',
-    component: InactivePostsComponent
-  },
-  {
-    path:'post-detail/:id',
-    component: DetailComponent
-  },
-  {
-    path:'**',
-    redirectTo:'/home',
-
-  }
-
-
-
+  { path: '', component: HomeComponent, pathMatch: 'full' },
+  { path: 'post-attivi', component: ActivePostsComponent },
+  { path: 'post-inattivi', component: InactivePostsComponent },
+  { path: 'post-detail', component: DetailComponent },
+  { path: '**', redirectTo: '/' }
 ];
 
 @NgModule({
