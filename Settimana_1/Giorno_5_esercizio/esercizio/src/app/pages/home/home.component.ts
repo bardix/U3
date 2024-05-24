@@ -9,10 +9,27 @@ import { iPost } from '../../Models/ipost';
 export class HomeComponent {
 
   postsArr:iPost [] = [];
+  firstPost!:iPost;
+  secondPost!:iPost;
+  randomPostsArr:iPost[] = [];
+
 
   ngOnInit(){
 
-    this.getPosts()
+    this.getPosts().then(()=>{
+
+    let firstPost = this.getFirstPost();
+    let secondPost = this.getSecondPost();
+    if (secondPost) {
+      this.secondPost = secondPost;
+    }
+
+    if (firstPost) {
+      this.firstPost = firstPost;
+    }
+
+    this.randomPostsArr= this.getRandomPost()
+  })
 
   }
     async getPosts(){
@@ -22,5 +39,18 @@ export class HomeComponent {
       console.log(this.postsArr);
 
     }
+    getSecondPost(){
+      return this.postsArr[1];
+    }
+
+    getFirstPost(){
+      return this.postsArr.shift();
+    }
+
+    getRandomPost() :iPost[] {
+      const shuffled = [...this.postsArr].sort(() => 0.5 - Math.random());
+      return shuffled.slice(0,2);
+    }
   }
+
 
