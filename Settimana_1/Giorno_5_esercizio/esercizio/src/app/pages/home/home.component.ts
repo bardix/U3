@@ -1,11 +1,9 @@
 
 import { Component, OnInit } from '@angular/core';
 import { iPost } from '../../Models/ipost';
+import { Brand } from '../../Models/ibrand';
 
-interface Brand {
-  name: string;
-  logo: string;
-}
+
 
 @Component({
   selector: 'app-home',
