@@ -7,6 +7,7 @@ import { NavbarComponent } from './main-components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ActivePostsComponent } from './pages/active-posts/active-posts.component';
 import { InactivePostsComponent } from './pages/inactive-posts/inactive-posts.component';
+import { DetailComponent } from './pages/detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { InactivePostsComponent } from './pages/inactive-posts/inactive-posts.co
     NavbarComponent,
     HomeComponent,
     ActivePostsComponent,
-    InactivePostsComponent
+    InactivePostsComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
