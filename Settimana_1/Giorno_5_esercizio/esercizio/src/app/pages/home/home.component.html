@@ -1,8 +1,18 @@
+<h2>I nostri marchi</h2>
+<div class="row">
+  <div class="col-12 col-md-6 col-lg-3" *ngFor="let brand of uniqueBrands">
+    <div class="card">
+      <img src="{{brand.logo}}" class="card-img-top" alt="{{brand.name}}">
+    </div>
+  </div>
+</div>
+
+
 <h2>Auto in evidenza</h2>
 <div class="row">
-  <div class="col 12 col-md-6 col-lg-3" *ngFor="let car of randomPostsArr">
+  <div class="col-12 col-md-6 col-lg-3" *ngFor="let car of randomPostsArr">
     <div class="card">
-      <img src={{car.modelImage}} class="card-img-top" alt={{car.model}}>
+      <img src="{{car.modelImage}}" class="card-img-top" alt="{{car.model}}">
       <div class="card-body">
         <h5 class="card-title">{{car.model}}</h5>
         <p>{{car.year}}</p>
@@ -10,16 +20,6 @@
         <p class="card-text">Pronta consegna: {{car.available}}</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
-    </div>
-  </div>
-</div>
-
-
-<h2>I nostri marchi</h2>
-<div class="row">
-  <div class="col 12 col-md-6 col-lg-3" *ngFor="let car of postsArr">
-    <div class="card">
-      <img src={{car.brandLogo}} class="card-img-top" alt={{car.brand}}>
     </div>
   </div>
 </div>

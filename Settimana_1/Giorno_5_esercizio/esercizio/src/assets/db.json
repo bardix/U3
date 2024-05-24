@@ -1,7 +1,7 @@
 [
     {
         "brand": "Fiat",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
         "model": "500L",
         "modelImage": "https://cdnwp.dealerk.com/eed49ed7/uploads/sites/142/2019/04/500l-120-768x432.jpg",
         "year": 2015,
@@ -10,7 +10,7 @@
     },
     {
         "brand": "Fiat",
-        "brandLogo": "https://picsum.photos/100/100?random=7",
+        "brandLogo": "https://upload.wikimedia.org/wikipedia/it/thumb/9/9e/Logo_della_Fiat.svg/2048px-Logo_della_Fiat.svg.png",
         "model": "500 Abarth",
         "modelImage": "https://www.autoscout24.it/cms-content-assets/4sbvd0wXw7X8nawHWYTFwV-6b2d7ef21862e9da173c25a5939b43a4-Fiat-500_Abarth-2012-1600-20-1100-1100.jpg",
         "year": 2010,
@@ -19,7 +19,7 @@
     },
     {
         "brand": "Ford",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "brandLogo": "https://www.rundesign.it/wp-content/uploads/2022/05/logoford_2003.jpeg",
         "model": "Taurus",
         "modelImage": "https://www.autoscout24.it/cms-content-assets/y6qAlpEqI7OVI6WkbFMZq-d21f45bc6a1f739a97443ee660f68446-ford-taurus-front-1100.jpeg",
         "year": 2009,
@@ -28,7 +28,7 @@
     },
     {
         "brand": "Ford",
-        "brandLogo": "https://picsum.photos/100/100?random=8",
+        "brandLogo": "https://www.rundesign.it/wp-content/uploads/2022/05/logoford_2003.jpeg",
         "model": "Focus",
         "modelImage": "https://www.gpas-cache.ford.com/guid/3c3e2039-651c-396c-9d4a-9341fa79386b.png",
         "year": 2014,
@@ -37,7 +37,7 @@
     },
     {
         "brand": "Audi",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "brandLogo": "https://www.salvatorepumo.it/wp-content/uploads/2022/01/logo-audi-1995-2009.jpg",
         "model": "A3",
         "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/AUDI/A3-SPORTBACK/44134_HATCHBACK-5-DOORS/audi-a3-sportback-front-view.jpg",
         "year": 2012,
@@ -46,7 +46,7 @@
     },
     {
         "brand": "Audi",
-        "brandLogo": "https://picsum.photos/100/100?random=9",
+        "brandLogo": "https://www.salvatorepumo.it/wp-content/uploads/2022/01/logo-audi-1995-2009.jpg",
         "model": "Q7",
         "modelImage": "https://cdn.drivek.com/configurator-imgs/cars/it/Original/AUDI/Q7/43953_SUV-5-DOORS/audi-q7-front-view.jpg",
         "year": 2020,
