@@ -1,0 +1,18 @@
+<div class="row">
+  <div class="col 12 col-md-6 col-lg-3" *ngFor="let car of postsArr">
+
+
+    <div class="card">
+      <img src={{car.modelImage}} class="card-img-top" alt={{car.model}}>
+      <div class="card-body">
+        <h5 class="card-title">{{car.model}}</h5>
+        <p>{{car.year}}</p>
+        <p class="card-text">Prezzo: {{car.price}}</p>
+        <p class="card-text">Pronta consegna: {{car.available}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+
+
+  </div>
+</div>
