@@ -11,7 +11,10 @@
 <h2>Auto in evidenza</h2>
 <div class="row">
   <div class="col-12 col-md-6 col-lg-3" *ngFor="let car of randomPostsArr">
-    <div class="card">
+    <div class="card" [ngClass]="{
+      'bg-success': car.available,
+      'bg-danger': !car.available
+    }">
       <img src="{{car.modelImage}}" class="card-img-top" alt="{{car.model}}">
       <div class="card-body">
         <h5 class="card-title">{{car.model}}</h5>
