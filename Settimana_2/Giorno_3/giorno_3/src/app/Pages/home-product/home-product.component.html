@@ -6,20 +6,11 @@
         <p class="card-text">{{ prodotto.description }}</p>
         <p class="card-text">Prezzo: {{ prodotto.price | currency:'EUR' }}</p>
         <p class="card-text">Categoria: {{ prodotto.category }}</p>
-        <p class="card-text">Sconto: {{ prodotto.discountPercentage }}%</p>
-        <p class="card-text">Valutazione: {{ prodotto.rating }}</p>
-        <p class="card-text">Disponibilità: {{ prodotto.stock }}</p>
+        <p class="card-text">Valutazione: {{ prodotto.rating }} stelle</p>
+        <p class="card-text">Disponibilità: {{ prodotto.stock }} pezzi</p>
         <p class="card-text">Marca: {{ prodotto.brand }}</p>
-        <p class="card-text">SKU: {{ prodotto.sku }}</p>
-        <p class="card-text">Peso: {{ prodotto.weight }} kg</p>
-        <p class="card-text">Dimensioni: {{ prodotto.dimensions.width }}x{{ prodotto.dimensions.height }}x{{
-          prodotto.dimensions.depth }} cm</p>
-        <p class="card-text">Informazioni sulla garanzia: {{ prodotto.warrantyInformation }}</p>
-        <p class="card-text">Informazioni sulla spedizione: {{ prodotto.shippingInformation }}</p>
-        <p class="card-text">Stato disponibilità: {{ prodotto.availabilityStatus }}</p>
-        <p class="card-text">Politica di reso: {{ prodotto.returnPolicy }}</p>
-        <p class="card-text">Quantità minima ordine: {{ prodotto.minimumOrderQuantity }}</p>
-        <img [src]="prodotto.thumbnail" alt="Immagine prodotto">
+        <img [src]="prodotto.thumbnail" alt="Immagine del prodotto" class="img-fluid">
+        <button class="btn btn-primary">Aggiungi ai preferiti</button>
       </div>
     </div>
   </div>
