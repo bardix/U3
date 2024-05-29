@@ -1,25 +1,21 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ProdottiserviceService } from '../../Services/prodottiservice.service';
 import { IProduct } from '../../Modules/i-product';
-
+import { IJson } from '../../Modules/i-json'; // Importazione aggiunta di IJson
 
 @Component({
   selector: 'app-home-product',
   templateUrl: './home-product.component.html',
-  styleUrls: ['./home-product.component.scss']
 })
 export class HomeProductComponent implements OnInit {
   prodotti: IProduct[] = [];
 
-
-  constructor(private prodottiService: ProdottiserviceService) { }
-
+  constructor(private prodottiserviceService: ProdottiserviceService) {}
 
   ngOnInit() {
-    this.prodottiService.getProdotti().subscribe(data => {
-      this.prodotti = data.products; // Assicurati che la struttura di 'data' corrisponda a quella ricevuta dal tuo backend
-      console.log(this.prodotti);
+    this.prodottiserviceService.getProdotti().subscribe((data:IJson) => { // Specificato il tipo di data come IJson
+      this.prodotti = data.products; // Assumendo che IJson abbia una proprietà products che è un array di IProduct
+      console.log(this.prodotti); // Per verificare i dati ricevuti
     });
   }
-
 }

@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { IJson } from '../Modules/i-json';
 
 @Injectable({
   providedIn: 'root'
@@ -11,9 +12,10 @@ export class ProdottiserviceService {
 
   constructor(private http: HttpClient) { }
 
-  getProdotti(): Observable<any> {
-    return this.http.get(this.url);
+  getProdotti(): Observable<IJson> {
+    return this.http.get<IJson>(this.url);
   }
+
 }
 
 

@@ -7,8 +7,11 @@ import { HomeProductComponent } from './Pages/home-product/home-product.componen
 import { FavouriteProductComponent } from './Pages/favourite-product/favourite-product.component';
 import { NavbarComponent } from './Componenti/navbar/navbar.component';
 import { FooterComponent } from './Componenti/footer/footer.component';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
+
   declarations: [
     AppComponent,
     HomeProductComponent,
@@ -18,9 +21,11 @@ import { FooterComponent } from './Componenti/footer/footer.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
+
   bootstrap: [AppComponent]
 })
 export class AppModule { }
