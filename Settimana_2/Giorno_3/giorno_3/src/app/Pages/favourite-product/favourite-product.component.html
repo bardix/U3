@@ -1,1 +1,8 @@
-<p>favourite-product works!</p>
+<div *ngFor="let prodotto of prodotti" class="col-md-4">
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">{{ prodotto.title }}</h5>
+      <button class="btn btn-danger" (click)="removeFavouriteProduct(prodotto.id)">Rimuovi dai preferiti</button>
+    </div>
+  </div>
+</div>

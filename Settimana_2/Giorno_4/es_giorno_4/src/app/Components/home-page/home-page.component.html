@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 mt-4 mb-4" *ngFor="let item of itemsArray; let i = index">
+      <div class="card">
+        <img [src]="item.thumbnailUrl" class="card-img-top" [alt]="item.title">
+        <div class="card-body">
+          <h5 class="card-title">{{ item.title }}</h5>
+          <p class="card-text">Album ID: {{ item.albumId }}</p>
+          <p class="card-text">ID: {{ item.id }}</p>
+          <button class="btn btn-danger me-2" (click)="deleteCard(i)">Elimina</button>
+          <button class="btn btn-primary" (click)="likeCard(item)">Mi Piace {{ item.likes || 0 }}</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

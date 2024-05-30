@@ -8,6 +8,7 @@ import { FavouriteProductComponent } from './Pages/favourite-product/favourite-p
 import { NavbarComponent } from './Componenti/navbar/navbar.component';
 import { FooterComponent } from './Componenti/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NgbToastModule } from '@ng-bootstrap/ng-bootstrap';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    NgbToastModule
   ],
   providers: [],
 

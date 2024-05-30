@@ -10,7 +10,7 @@
         <p class="card-text">Disponibilità: {{ prodotto.stock }} pezzi</p>
         <p class="card-text">Marca: {{ prodotto.brand }}</p>
         <img [src]="prodotto.thumbnail" alt="Immagine del prodotto" class="img-fluid">
-        <button class="btn btn-primary">Aggiungi ai preferiti</button>
+        <button class="btn btn-primary" (click)="aggiungiAiPreferiti(prodotto)">Aggiungi ai preferiti</button>
       </div>
     </div>
   </div>
