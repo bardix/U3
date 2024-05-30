@@ -1,10 +1,13 @@
 import { Component } from '@angular/core';
+import { NgbToastService } from './Services/ngb-toast.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'giorno_3';
+  constructor(public toastService: NgbToastService) {
+    this.toastService.toasts = this.toastService.toasts ?? [];
+  }
 }

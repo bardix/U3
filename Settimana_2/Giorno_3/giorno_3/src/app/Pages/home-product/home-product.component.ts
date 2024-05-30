@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ProdottiserviceService } from '../../Services/prodottiservice.service';
 import { IProduct } from '../../Modules/i-product';
-import { IJson } from '../../Modules/i-json'; // Importazione aggiunta di IJson
+import { IJson } from '../../Modules/i-json';
+import { NgbToastService } from '../../Services/ngb-toast.service'; // Importa il servizio
 
 @Component({
   selector: 'app-home-product',
@@ -10,12 +11,21 @@ import { IJson } from '../../Modules/i-json'; // Importazione aggiunta di IJson
 export class HomeProductComponent implements OnInit {
   prodotti: IProduct[] = [];
 
-  constructor(private prodottiserviceService: ProdottiserviceService) {}
+  constructor(
+    private prodottiserviceService: ProdottiserviceService,
+    private toastService: NgbToastService // Inietta il servizio
+  ) {}
 
   ngOnInit() {
-    this.prodottiserviceService.getProdotti().subscribe((data:IJson) => { // Specificato il tipo di data come IJson
-      this.prodotti = data.products; // Assumendo che IJson abbia una proprietà products che è un array di IProduct
-      console.log(this.prodotti); // Per verificare i dati ricevuti
+    this.prodottiserviceService.getProdotti().subscribe((data: IJson) => {
+      this.prodotti = data.products;
+      console.log(this.prodotti);
+    });
+  }
+
+  aggiungiAiPreferiti(prodotto: IProduct) {
+    this.prodottiserviceService.aggiungiProdotto(prodotto).subscribe(() => {
+      this.toastService.show(`${prodotto.title} aggiunto ai preferiti`, { classname: 'bg-success text-light', delay: 5000 });
     });
   }
 }
