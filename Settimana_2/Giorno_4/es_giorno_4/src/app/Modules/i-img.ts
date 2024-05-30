@@ -1,5 +1,5 @@
 export interface IIMG {
-  likes: any
+  likes: number
   albumId: number
   id: number
   title: string
