@@ -909,4 +909,11 @@ export class TodoServService {
   ];
 
   constructor() { }
+
+  updateTodoStatus(id: number, completed: boolean): void {
+    const todo = this.todos.find(t => t.id === id);
+    if (todo) {
+      todo.completed = completed;
+    }
+  }
 }

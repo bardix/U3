@@ -1,1 +1,8 @@
-<p>users works!</p>
+<div *ngFor="let user of usersWithTodos">
+  <h2>{{user.userName}}</h2>
+  <img [src]="user.userImage" alt="{{user.userName}}">
+  <div *ngFor="let todo of user.todos" [ngClass]="{'completed': todo.completed, 'not-completed': !todo.completed}">
+    <input type="checkbox" [checked]="todo.completed" (click)="toggleCompletion(todo)">
+    <h3>{{todo.todo}}</h3>
+  </div>
+</div>

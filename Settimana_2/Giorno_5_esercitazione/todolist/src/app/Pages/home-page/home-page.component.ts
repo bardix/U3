@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatiService } from '../../Services/dati.service';
+import { TodoServService } from '../../Services/todo-serv.service';
 
 @Component({
   selector: 'app-home-page',
@@ -9,7 +10,7 @@ import { DatiService } from '../../Services/dati.service';
 export class HomePageComponent implements OnInit {
   todosWithUsers: any[] = [];
 
-  constructor(private datiService: DatiService) { }
+  constructor(private datiService: DatiService, private todoService: TodoServService) { }
 
   ngOnInit(): void {
     this.todosWithUsers = this.datiService.getTodosWithUsers();
@@ -17,5 +18,7 @@ export class HomePageComponent implements OnInit {
 
   toggleCompletion(todo: any): void {
     todo.completed = !todo.completed;
+    this.todoService.updateTodoStatus(todo.id, todo.completed);
+    this.todosWithUsers = this.datiService.getTodosWithUsers(); // Aggiorna la lista
   }
 }

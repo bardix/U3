@@ -29,4 +29,20 @@ export class DatiService {
   getCompletedTodos() {
     return this.getTodosWithUsers().filter(todo => todo.completed);
   }
+
+  getTodosGroupedByUser() {
+    const todos = this.getTodosWithUsers();
+    const groupedTodos = todos.reduce((acc: { [key: number]: any }, todo) => {
+      if (!acc[todo.userId]) {
+        acc[todo.userId] = {
+          userName: todo.userName,
+          userImage: todo.userImage,
+          todos: []
+        };
+      }
+      acc[todo.userId].todos.push(todo);
+      return acc;
+    }, {});
+    return Object.values(groupedTodos);
+  }
 }
