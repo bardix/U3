@@ -1,31 +1,31 @@
 .completed {
-  background-color: #d4edda; /* Verde */
+  background-color: #d4edda; /* Colore di sfondo verde per i task completati */
 }
 .not-completed {
-  background-color: #f8d7da; /* Rosso */
+  background-color: #f8d7da; /* Colore di sfondo rosso per i task non completati */
 }
 
 .search-form {
-  margin-top: 20px; /* Distanza dalla navbar */
-  margin-bottom: 20px; /* Distanza dalle task */
-  margin-left: 20px; /* Distanza dal lato sinistro */
+  margin-top: 20px; /* Spazio sopra il form di ricerca */
+  margin-bottom: 20px; /* Spazio sotto il form di ricerca */
+  margin-left: 20px; /* Spazio a sinistra del form di ricerca */
 }
 
 .home-page {
-  margin: 0 1.25rem 3.75rem 1.25rem; /* Aggiungi margine a destra */
+  margin: 0 1.25rem 3.75rem 1.25rem; /* Margine intorno alla pagina home */
 }
 
 .task-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Aggiungi un po' di spazio tra le task */
+  margin-bottom: 10px; /* Spazio sotto ogni task */
 }
 
 .task-item input[type="checkbox"] {
-  margin-left: 10px; /* Margine a sinistra della checkbox */
+  margin-left: 10px; /* Spazio a sinistra della checkbox */
 }
 
 .task-item h3,
 .task-item p {
-  margin: 0 10px; /* Aggiungi un po' di spazio tra la checkbox e il testo */
+  margin: 0 10px; /* Spazio tra la checkbox e il testo del task */
 }

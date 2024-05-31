@@ -6,11 +6,11 @@
 }
 
 .users-page {
-  margin: 0 1.25rem 3.75rem 1.25rem; /* Aggiungi margine a destra */
+  margin: 0 1.25rem 3.75rem 1.25rem; /* Aggiungo margine a destra */
 }
 
 .user-container {
-  border: 1px solid #d3d3d3; /* Bordo grigio chiaro */
+  border: 1px solid #d3d3d3; /* Bordo grigio chiao */
   padding: 10px; /* Spazio interno */
   margin-bottom: 20px; /* Spazio tra i contenitori degli utenti */
 }
@@ -18,7 +18,8 @@
 .task-item {
   display: flex;
   align-items: center;
-  margin-bottom: 10px; /* Aggiungi un po' di spazio tra le task */
+  margin-bottom: 10px;
+  margin-top: 10px; /* Aggiungo un po' di spazio tra le task */
 }
 
 .task-item input[type="checkbox"] {
@@ -27,5 +28,5 @@
 
 .task-item h3,
 .task-item p {
-  margin: 0 10px; /* Aggiungi un po' di spazio tra la checkbox e il testo */
+  margin: 0 10px; /* Aggiungo un po' di spazio tra la checkbox e il testo */
 }
