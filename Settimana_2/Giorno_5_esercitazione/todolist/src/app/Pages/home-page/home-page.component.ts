@@ -14,4 +14,8 @@ export class HomePageComponent implements OnInit {
   ngOnInit(): void {
     this.todosWithUsers = this.datiService.getTodosWithUsers();
   }
+
+  toggleCompletion(todo: any): void {
+    todo.completed = !todo.completed;
+  }
 }

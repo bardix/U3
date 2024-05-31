@@ -25,4 +25,8 @@ export class DatiService {
       };
     });
   }
+
+  getCompletedTodos() {
+    return this.getTodosWithUsers().filter(todo => todo.completed);
+  }
 }
