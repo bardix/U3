@@ -1,1 +1,5 @@
-<p>home-page works!</p>
+<div *ngFor="let todo of todosWithUsers" [ngClass]="{'completed': todo.completed, 'not-completed': !todo.completed}">
+  <img [src]="todo.userImage" alt="{{todo.userName}}">
+  <h3>{{todo.todo}}</h3>
+  <p>By: {{todo.userName}}</p>
+</div>
