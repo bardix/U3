@@ -1,6 +1,8 @@
-<div *ngFor="let todo of todosWithUsers" [ngClass]="{'completed': todo.completed, 'not-completed': !todo.completed}">
+<div>
+  <input type="text" [(ngModel)]="searchQuery" (input)="filterTodos()" placeholder="Cerca per nome utente">
+</div>
+<div *ngFor="let todo of filteredTodos" [ngClass]="{'completed': todo.completed, 'not-completed': !todo.completed}">
   <input type="checkbox" [checked]="todo.completed" (click)="toggleCompletion(todo)">
-  <img [src]="todo.userImage" alt="{{todo.userName}}">
   <h3>{{todo.todo}}</h3>
   <p>By: {{todo.userName}}</p>
 </div>
