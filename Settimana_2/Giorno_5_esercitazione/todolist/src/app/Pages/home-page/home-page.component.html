@@ -1,8 +1,11 @@
-<div>
-  <input type="text" [(ngModel)]="searchQuery" (input)="filterTodos()" placeholder="Cerca per nome utente">
-</div>
-<div *ngFor="let todo of filteredTodos" [ngClass]="{'completed': todo.completed, 'not-completed': !todo.completed}">
-  <input type="checkbox" [checked]="todo.completed" (click)="toggleCompletion(todo)">
-  <h3>{{todo.todo}}</h3>
-  <p>By: {{todo.userName}}</p>
+<div class="home-page">
+  <div class="search-form">
+    <input type="text" [(ngModel)]="searchQuery" (input)="filterTodos()" placeholder="Cerca per nome utente">
+  </div>
+  <div *ngFor="let todo of filteredTodos" class="task-item"
+    [ngClass]="{'completed': todo.completed, 'not-completed': !todo.completed}">
+    <input type="checkbox" [checked]="todo.completed" (click)="toggleCompletion(todo)">
+    <h3>{{todo.todo}}</h3>
+    <p>By: {{todo.userName}}</p>
+  </div>
 </div>

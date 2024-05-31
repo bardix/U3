@@ -4,3 +4,28 @@
 .not-completed {
   background-color: #f8d7da; /* Rosso */
 }
+
+.search-form {
+  margin-top: 20px; /* Distanza dalla navbar */
+  margin-bottom: 20px; /* Distanza dalle task */
+  margin-left: 20px; /* Distanza dal lato sinistro */
+}
+
+.home-page {
+  margin: 0 1.25rem 3.75rem 1.25rem; /* Aggiungi margine a destra */
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Aggiungi un po' di spazio tra le task */
+}
+
+.task-item input[type="checkbox"] {
+  margin-left: 10px; /* Margine a sinistra della checkbox */
+}
+
+.task-item h3,
+.task-item p {
+  margin: 0 10px; /* Aggiungi un po' di spazio tra la checkbox e il testo */
+}
