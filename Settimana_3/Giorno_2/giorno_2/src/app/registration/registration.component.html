@@ -1,0 +1,73 @@
+<div class="container mt-5">
+  <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+    <div class="form-group mb-3">
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" class="form-control" formControlName="nome">
+      <div *ngIf="registrationForm.get('nome')?.invalid && registrationForm.get('nome')?.touched" class="text-danger">
+        Il campo Nome è obbligatorio.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="cognome">Cognome</label>
+      <input type="text" id="cognome" class="form-control" formControlName="cognome">
+      <div *ngIf="registrationForm.get('cognome')?.invalid && registrationForm.get('cognome')?.touched"
+        class="text-danger">
+        Il campo Cognome è obbligatorio.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="password">Password</label>
+      <input type="password" id="password" class="form-control" formControlName="password">
+      <div *ngIf="registrationForm.get('password')?.invalid && registrationForm.get('password')?.touched"
+        class="text-danger">
+        La password è obbligatoria e deve essere lunga almeno 6 caratteri.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="confermaPassword">Conferma Password</label>
+      <input type="password" id="confermaPassword" class="form-control" formControlName="confermaPassword">
+      <div *ngIf="registrationForm.errors?.['mismatch'] && registrationForm.get('confermaPassword')?.touched"
+        class="text-danger">
+        Le password non corrispondono.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="genere">Genere</label>
+      <select id="genere" class="form-control" formControlName="genere">
+        <option value="maschio">Maschio</option>
+        <option value="femmina">Femmina</option>
+        <option value="altro">Altro</option>
+      </select>
+      <div *ngIf="registrationForm.get('genere')?.invalid && registrationForm.get('genere')?.touched"
+        class="text-danger">
+        Il campo Genere è obbligatorio.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="immagineProfilo">Immagine Profilo</label>
+      <input type="file" id="immagineProfilo" class="form-control" formControlName="immagineProfilo">
+      <div *ngIf="registrationForm.get('immagineProfilo')?.invalid && registrationForm.get('immagineProfilo')?.touched"
+        class="text-danger">
+        Il campo Immagine Profilo è obbligatorio.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="biografia">Biografia</label>
+      <textarea id="biografia" class="form-control" formControlName="biografia"></textarea>
+      <div *ngIf="registrationForm.get('biografia')?.invalid && registrationForm.get('biografia')?.touched"
+        class="text-danger">
+        Il campo Biografia è obbligatorio.
+      </div>
+    </div>
+    <div class="form-group mb-3">
+      <label for="username">Username</label>
+      <input type="text" id="username" class="form-control" formControlName="username">
+      <div *ngIf="registrationForm.get('username')?.invalid && registrationForm.get('username')?.touched"
+        class="text-danger">
+        Il campo Username è obbligatorio.
+      </div>
+    </div>
+    <div class="mt-3"></div>
+    <button type="submit" class="btn btn-primary">Registrati</button>
+  </form>
+</div>
