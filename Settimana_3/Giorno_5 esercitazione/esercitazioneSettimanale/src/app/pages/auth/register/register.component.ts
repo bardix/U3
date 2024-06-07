@@ -9,7 +9,7 @@ import { iUser } from '../../../Interfaces/user';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
-  user: iUser = { id: 0, name: '', email: '', password: '' };
+  user: iUser = { id: 0, name: '', email: '', password: '', favorites: [] };
 
   constructor(private authService: AuthService) {}
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Film } from '../../Interfaces/film'; // Importa l'interfaccia Film
+import { iUser } from '../../Interfaces/user';
+import { UserService } from '../../Services/user-service.service';
+
 
 @Component({
   selector: 'app-dashboard',
@@ -8,15 +9,13 @@ import { Film } from '../../Interfaces/film'; // Importa l'interfaccia Film
   styleUrls: ['./dashboard.component.scss']
 })
 export class DashboardComponent implements OnInit {
-  user = { name: 'User', favorites: [] as Film[] }; // Usa l'interfaccia Film
+  user: iUser | null = null;
 
-  constructor(private http: HttpClient) {}
+  constructor(private userService: UserService) {}
 
   ngOnInit() {
-    const userId = 'id_dell_utente_loggato'; // Sostituisci con l'ID reale dell'utente
-    this.http.get<any[]>(`http://localhost:3000/favorites?userId=${userId}`)
-      .subscribe((data: Film[]) => { // Usa l'interfaccia Film
-        this.user.favorites = data;
-      });
+    this.userService.user$.subscribe(user => {
+      this.user = user;
+    });
   }
 }

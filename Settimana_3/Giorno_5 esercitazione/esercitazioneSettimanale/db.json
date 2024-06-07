@@ -5,6 +5,34 @@
       "password": "$2a$10$6y8EO9uZF03mNGOdWSqKG./PKEWycqzUKQjws2lvMekLKQYiCe3gm",
       "id": 1,
       "name": "Kalia Bentley"
+    },
+    {
+      "email": "ticomapes@mailinator.com",
+      "password": "$2a$10$7LkPUSAINFDUWnLmIliUG.bRd4VLoTS4G1CSrjssuBfccOXcQkquW",
+      "id": 2,
+      "name": "Jolie Hamilton",
+      "favorites": []
+    },
+    {
+      "email": "henowiqywo@mailinator.com",
+      "password": "$2a$10$a62hPdQWy6YQpEoO0vcjiuEJMJWFcJVoujoHC1SUpDzpKcZSZp0qG",
+      "id": 3,
+      "name": "Aristotle Mathews",
+      "favorites": []
+    },
+    {
+      "email": "sabyw@mailinator.com",
+      "password": "$2a$10$yEKDkjnXKqD.Rfu1uFOAJucDsmAncIS2ZtMR/pJv.//lygk3qvPKe",
+      "id": 4,
+      "name": "Buckminster Saunders",
+      "favorites": []
+    },
+    {
+      "email": "qeca@mailinator.com",
+      "password": "$2a$10$njsilPsZQvGkvq8ail7XKeuT4tC7M8YQu7JyKy1CA1u3uFaJgIUeS",
+      "id": 5,
+      "name": "Cyrus Holman",
+      "favorites": []
     }
   ],
   "favourites": [],
