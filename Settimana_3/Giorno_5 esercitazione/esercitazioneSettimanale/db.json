@@ -33,6 +33,13 @@
       "id": 5,
       "name": "Cyrus Holman",
       "favorites": []
+    },
+    {
+      "email": "wimaxywu@mailinator.com",
+      "password": "$2a$10$Ygx8iISF.2jyHvGqmJ6QZepZfknrw9MNV2nArZNu3MrzzcNJorLDq",
+      "id": 6,
+      "name": "Reagan Bender",
+      "favorites": []
     }
   ],
   "favourites": [],
