@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Authdata } from '../../../Interfaces/authdata';
+import { AuthService } from '../../../Services/auth.service';
+import { iUser } from '../../../Interfaces/user';
 
 @Component({
   selector: 'app-register',
@@ -6,5 +9,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./register.component.scss']
 })
 export class RegisterComponent {
+  user: iUser = { id: 0, name: '', email: '', password: '' };
 
+  constructor(private authService: AuthService) {}
+
+  onRegister(): void {
+    this.authService.register(this.user);
+  }
 }

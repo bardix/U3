@@ -6,6 +6,9 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/home">Home</a>
+      </li>
       <li class="nav-item" *ngIf="!(isAuthenticated | async)">
         <a class="nav-link" routerLink="/auth/login">Login</a>
       </li>
@@ -19,7 +22,7 @@
         <a class="nav-link" routerLink="/users">Users</a>
       </li>
       <li class="nav-item" *ngIf="isAuthenticated | async">
-        <a class="nav-link" routerLink="/profile">Profile</a>
+        <a class="nav-link" routerLink="/dashboard">Dashboard</a>
       </li>
       <li class="nav-item" *ngIf="isAuthenticated | async">
         <button class="btn btn-outline-danger" (click)="logout()">Logout</button>
