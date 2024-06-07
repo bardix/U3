@@ -1,0 +1,78 @@
+{
+"users": [],
+"favourites": [],
+"film": [
+  {
+    "id": 1,
+    "nome": "Dragon Ball Z: La vendetta divina",
+    "immagine": "https://m.media-amazon.com/images/I/81e1gD1I4bL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1989,
+    "descrizione": "Il primo film di Dragon Ball Z, dove Goku e i suoi amici affrontano il malvagio Garlic Jr., che ha rapito Gohan per rubare la Sfera del Drago che tiene nel cappello."
+  },
+  {
+    "id": 2,
+    "nome": "Dragon Ball Z: Il più forte del mondo",
+    "immagine": "https://m.media-amazon.com/images/I/91ANyW8GDWL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1990,
+    "descrizione": "Dr. Wheelo, uno scienziato malvagio, tenta di trasferire il suo cervello in un corpo perfetto, prendendo di mira Goku e i suoi amici."
+  },
+  {
+    "id": 3,
+    "nome": "Dragon Ball Z: La grande battaglia per il destino del mondo",
+    "immagine": "https://m.media-amazon.com/images/I/71IcILaEShL._AC_SL1000_.jpg",
+    "anno_di_uscita": 1990,
+    "descrizione": "Goku e gli altri devono affrontare Turles, un Saiyan malvagio che vuole distruggere la Terra piantando l'Albero del Potere."
+  },
+  {
+    "id": 4,
+    "nome": "Dragon Ball Z: La sfida dei guerrieri invincibili",
+    "immagine": "https://m.media-amazon.com/images/I/91DAOPsHkHL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1991,
+    "descrizione": "Lord Slug, un Namecciano malvagio, arriva sulla Terra con l'intento di conquistarla e Goku e i suoi amici devono fermarlo."
+  },
+  {
+    "id": 5,
+    "nome": "Dragon Ball Z: Il destino dei Saiyan",
+    "immagine": "https://m.media-amazon.com/images/I/81-e1f0XlyL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1991,
+    "descrizione": "Goku e Vegeta affrontano Cooler, il fratello di Freezer, che vuole vendicare la morte di suo fratello."
+  },
+  {
+    "id": 6,
+    "nome": "Dragon Ball Z: L'invasione di Neo Namek",
+    "immagine": "https://m.media-amazon.com/images/I/81mHrTHPOsL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1992,
+    "descrizione": "Cooler torna come un cyborg e attacca Neo Namek, cercando vendetta contro Goku e i suoi amici."
+  },
+  {
+    "id": 7,
+    "nome": "Dragon Ball Z: I tre Super Saiyan",
+    "immagine": "https://m.media-amazon.com/images/I/81tDf65FyoL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1992,
+    "descrizione": "Goku, Vegeta e Trunks affrontano Android 13, 14 e 15, creati dal Dr. Gero per vendicarsi della sconfitta degli altri Androidi."
+  },
+  {
+    "id": 8,
+    "nome": "Dragon Ball Z: Il Super Saiyan della leggenda",
+    "immagine": "https://m.media-amazon.com/images/I/81JzQ6ZnMSL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1993,
+    "descrizione": "Broly, un Super Saiyan leggendario, minaccia la pace della galassia e Goku e i suoi amici devono affrontarlo."
+  },
+  {
+    "id": 9,
+    "nome": "Dragon Ball Z: La minaccia del demone malvagio",
+    "immagine": "https://m.media-amazon.com/images/I/71pVGJldNwL._AC_SL1000_.jpg",
+    "anno_di_uscita": 1993,
+    "descrizione": "Bojack, un antico guerriero sigillato dai Kaioshin, si libera e partecipa a un torneo di arti marziali per conquistare la Terra."
+  },
+  {
+    "id": 10,
+    "nome": "Dragon Ball Z: L'irriducibile bio-combattente",
+    "immagine": "https://m.media-amazon.com/images/I/81hybucXEnL._AC_SL1500_.jpg",
+    "anno_di_uscita": 1994,
+    "descrizione": "Goku e i suoi amici devono affrontare Bio-Broly, un clone di Broly creato attraverso la bioingegneria, che minaccia di distruggere tutto."
+  }
+]
+
+}
+

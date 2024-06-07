@@ -1,0 +1,11 @@
+<div *ngFor="let film of films">
+  <img [src]="film.immagine" alt="{{ film.nome }}">
+  <h3>{{ film.nome }}</h3>
+  <button (click)="addToFavorites(film)">Aggiungi ai Preferiti</button>
+  <button (click)="getFilmDetails(film.id)">Visualizza Dettagli</button>
+</div>
+
+<div *ngIf="selectedFilm">
+  <h2>{{ selectedFilm.nome }}</h2>
+  <p>{{ selectedFilm.descrizione }}</p>
+</div>
